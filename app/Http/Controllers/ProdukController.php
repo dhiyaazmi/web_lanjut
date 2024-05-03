@@ -20,7 +20,7 @@ class ProdukController extends Controller
      */
     public function create()
     {
-        //
+        return view("create");
     }
 
     /**
@@ -36,7 +36,12 @@ class ProdukController extends Controller
      */
     public function show(Produk $produk)
     {
-        //
+        $arr = [
+            ["kode" => "BRG001", "nama" => "Pena", "jenis" => "Alat tulis", "harga" => "20000"],
+            ["kode" => "BRG002", "nama" => "Buku", "jenis" => "Alat tulis", "harga" => "15000"]
+        ];
+        
+        return view("show", compact('arr'));
     }
 
     /**

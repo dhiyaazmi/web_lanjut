@@ -20,3 +20,5 @@ use App\Http\Controllers\ProdukController;
 // });
 
 Route::get('/', [ProdukController::class, "index"])->name("index");
+Route::get('/show', [ProdukController::class, "show"])->name("show");
+Route::get('/create', [ProdukController::class, "create"])->name("create");
