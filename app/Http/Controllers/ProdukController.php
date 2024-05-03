@@ -20,7 +20,9 @@ class ProdukController extends Controller
      */
     public function create()
     {
-        return view("create");
+        $arr = ["Alat tulis", "Elektronik", "Sembako"];
+
+        return view("create", compact("arr"));
     }
 
     /**
